@@ -2,6 +2,8 @@
 alias ll="ls -la"
 alias src="source ~/.bash_profile"
 alias wk="cd ~/workspace"
+alias gcm="git commit -m"
+alias gpm="git push origin master"
 
 # source bashrc
 # see http://apple.stackexchange.com/questions/119711/why-mac-os-x-dont-source-bashrc
