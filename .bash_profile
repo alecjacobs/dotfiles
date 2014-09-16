@@ -1,18 +1,17 @@
-# my aliases
-alias ll="ls -la"
-alias src="source ~/.bash_profile"
-alias wk="cd ~/workspace"
-alias gcm="git commit -m"
-alias gpm="git push origin master"
-
 # source bashrc
 # see http://apple.stackexchange.com/questions/119711/why-mac-os-x-dont-source-bashrc
 # see http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html
-if [ -f ~/.bashrc ]; then 
-  source ~/.bashrc; 
+if [ -f ~/.bashrc ]
+then 
+  source ~/.bashrc;
+else
+  echo "no bashrc file"
 fi
 
-# Setting PATH for Python 2.7
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
+# my aliases
+alias ll="ls -la"
+alias src="source ~/.bash_profile"
+alias wk="cd $CURRENT_PROJECT"
+alias swk="pwd > ~/.current-project && src"
+alias gcm="git commit -m"
+alias gpm="git push origin master"
