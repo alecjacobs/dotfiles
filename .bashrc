@@ -11,10 +11,12 @@ export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 if [ -f ~/.current-project ]
 then
   export CURRENT_PROJECT=`cat ~/.current-project`
-  echo "setting your current project directory:" $CURRENT_PROJECT
 
   # http://stackoverflow.com/questions/13766329/how-to-extract-filename-from-path-using-sed-or-awk
   export PROJECT_NAME=`echo $CURRENT_PROJECT | awk '{gsub(/\/.*\//,"",$1); print}'`
+  
+  # http://linuxtidbits.wordpress.com/2008/08/11/output-color-on-bash-scripts/
+  echo "setting your current project directory:" "$(tput setaf 3)$PROJECT_NAME$(tput sgr0)"
 else
   echo "no ~/.current-project file"
   echo "set the current directory by typing 'swk'"
