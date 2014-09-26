@@ -23,6 +23,6 @@ fi
 
 # prompt configuration
 # see http://www.ibm.com/developerworks/linux/library/l-tip-prompt/
-export PS1="\e[34m\u\e[0m | \e[33m$PROJECT_NAME\e[0m | \e[37m\w\e[0m \n\e[32m>\e[0m "
+export PS1="\e[34m\u\e[0m | \e[33m$PROJECT_NAME\e[0m | \e[37m\w\e[0m \n\e[32m (\$(git symbolic-ref -q --short HEAD)) >\e[0m "
 
 echo ".bashrc ✓"
