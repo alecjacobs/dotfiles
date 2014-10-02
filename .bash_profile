@@ -17,4 +17,4 @@ alias gcm="git commit -m"
 alias gpm="git push origin master"
 alias gs="git status"
 alias amp="bash ~/workspace/build-app" # add favorite meteor packages
-alias weather="coffee ~/workspace/weather-me/get-weather.coffee" # shortcut for the weather
+alias weather="coffee ~/workspace/weather-me/run.coffee" # shortcut for the weather
