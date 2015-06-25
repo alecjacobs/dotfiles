@@ -1,6 +1,6 @@
 # my aliases
 alias ll="ls -la"
-alias src="source ~/.bash_profile"
+alias src="source ~/.bashrc"
 alias wk="cd $CURRENT_PROJECT"
 alias swk="pwd > ~/.current-project && src"
 alias gcm="git commit -m"
