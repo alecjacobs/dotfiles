@@ -4,9 +4,6 @@ then
 
   # http://stackoverflow.com/questions/13766329/how-to-extract-filename-from-path-using-sed-or-awk
   export PROJECT_NAME=`echo $CURRENT_PROJECT | awk '{gsub(/\/.*\//,"",$1); print}'`
-
-  # http://linuxtidbits.wordpress.com/2008/08/11/output-color-on-bash-scripts/
-  echo "setting your current project directory:" "$(tput setaf 3)$PROJECT_NAME$(tput sgr0)"
 else
   echo "no ~/.current-project file"
   echo "set the current directory by typing 'swk'"
@@ -16,5 +13,3 @@ fi
 # prompt configuration
 # see http://www.ibm.com/developerworks/linux/library/l-tip-prompt/
 export PS1="\e[34m\u\e[0m | \e[33m$PROJECT_NAME\e[0m | \e[37m\w\e[0m \n\e[32m (\$(git symbolic-ref -q --short HEAD)) >\e[0m "
-
-echo ".bashrc ✓"
