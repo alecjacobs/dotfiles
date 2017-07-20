@@ -5,11 +5,9 @@ then
   # http://stackoverflow.com/questions/13766329/how-to-extract-filename-from-path-using-sed-or-awk
   export PROJECT_NAME=`echo $CURRENT_PROJECT | awk '{gsub(/\/.*\//,"",$1); print}'`
 else
-  echo "no ~/.current-project file"
-  echo "set the current directory by typing 'swk'"
-  export PROJECT_NAME="(no current project)"
+  export PROJECT_NAME="set the current directory by typing 'swk'"
 fi
 
 # prompt configuration
 # see http://www.ibm.com/developerworks/linux/library/l-tip-prompt/
-export PS1="\e[34m\u\e[0m | \e[33m$PROJECT_NAME\e[0m | \e[37m\w\e[0m \n\e[32m (\$(git symbolic-ref -q --short HEAD)) >\e[0m "
+export PS1=" 🔥  \e[32;44m \# \e[0m\e[30;47m \@ \e[0m\e[44:40m wk: $PROJECT_NAME \e[0m\e[30;42m pwd: \w \e[0m | \e[32m\$(if [ -d ./.git ]; then git symbolic-ref -q --short HEAD; else echo "=-="; fi;) >\e[0m " # TODO how do you not get the current branch for the prompt (and not trigger git warnings) when not in git repo?! # what even is this anymore
