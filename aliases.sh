@@ -6,6 +6,7 @@ alias swk="pwd > ~/.current-project && src" # set current working directory
 
 alias gcm="git commit -m"
 alias gpm="git push origin master"
+alias gph="git push -u origin HEAD"
 alias gs="git status"
 alias gd="git diff"
 alias gaa="git add -A"
