@@ -11,6 +11,7 @@ alias gph="git push -u origin HEAD"
 alias gs="git status"
 alias gd="git diff"
 alias gaa="git add -A"
+alias gdh="git diff HEAD"
 
 alias amp="bash ~/workspace/build-meteor-app/build-app" # setup blank meteor app
 alias weather="coffee ~/workspace/weather-me/run.coffee" # shortcut for the weather
