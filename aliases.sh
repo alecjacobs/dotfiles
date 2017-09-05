@@ -1,7 +1,7 @@
 # my aliases
 alias ll="ls -laG" # duh
 alias src="source ~/.bashrc" # re source everything?
-alias wk="cd $CURRENT_PROJECT" # goto current working directory
+alias wk="cd $CURRENT_PROJECT_DIRECTORY" # goto current working directory
 alias swk="pwd > ~/.current-project && src" # set current working directory
 alias stw="bundle exec sidekiq -c 1"
 
