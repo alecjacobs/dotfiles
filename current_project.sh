@@ -10,4 +10,4 @@ fi
 
 # prompt configuration
 # see http://www.ibm.com/developerworks/linux/library/l-tip-prompt/
-export PS1=" 🔥  \e[32;44m \# \e[0m\e[30;47m \@ \e[0m\e[44:40m wk: $PROJECT_NAME \e[0m\e[30;42m pwd: \w \e[0m | \e[32m\$(if [ -d ./.git ]; then git symbolic-ref -q --short HEAD; else echo "=-="; fi;) >\e[0m " # TODO how do you not get the current branch for the prompt (and not trigger git warnings) when not in git repo?! # what even is this anymore
+export PS1=" 🔥  \e[32;44m \# \e[0m\e[30;47m \@ \e[0m\e[44:40m wk: $PROJECT_NAME \e[0m\e[30;42m pwd: \w \e[0m | \e[32m\$(if [ -d ./.git ]; then git symbolic-ref -q --short HEAD; else echo "=-="; fi;) >\e[0m "
