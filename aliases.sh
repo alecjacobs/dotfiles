@@ -12,10 +12,7 @@ alias gd="git diff"
 alias gaa="git add -A"
 alias gdh="git diff HEAD"
 
-alias amp="bash ~/workspace/build-meteor-app/build-app" # setup blank meteor app
 alias weather="coffee ~/workspace/weather-me/run.coffee" # shortcut for the weather
-alias mou="open /Applications/Mou.app" # Mac OS Yoesmite broke this?
-alias cnm="meteor --port $IP:$PORT"
 
 src() {
   if [ -f ~/.bashrc ]; then
@@ -28,4 +25,3 @@ src() {
     echo "sourcing .bash_profile"
   fi
 }
-
