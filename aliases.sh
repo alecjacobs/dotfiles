@@ -12,6 +12,9 @@ alias gd="git diff"
 alias gaa="git add -A"
 alias gdh="git diff HEAD"
 
+alias be="bundle exec"
+alias ber="bundle exec rspec"
+
 alias weather="coffee ~/workspace/weather-me/run.coffee" # shortcut for the weather
 
 src() {
