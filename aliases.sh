@@ -11,9 +11,15 @@ alias gs="git status"
 alias gd="git diff"
 alias gaa="git add -A"
 alias gdh="git diff HEAD"
+alias grh="git reset --hard"
+alias gco="git checkout "
+alias gbl="git branch -v"
+alias gbd="git branch -d "
 
 alias be="bundle exec"
 alias ber="bundle exec rspec"
+
+alias rubo="echo 'uncommitted rubo remarks:' && be pronto run --index && echo 'committed rubo remarks:' && be pronto run"
 
 alias weather="coffee ~/workspace/weather-me/run.coffee" # shortcut for the weather
 
