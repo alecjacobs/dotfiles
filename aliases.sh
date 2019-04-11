@@ -18,6 +18,7 @@ alias gbd="git branch -d "
 
 alias be="bundle exec"
 alias ber="bundle exec rspec"
+alias berb="bundle exec rspec --backtrace"
 
 alias rubo="echo 'uncommitted rubo remarks:' && be pronto run --index && echo 'committed rubo remarks:' && be pronto run"
 
