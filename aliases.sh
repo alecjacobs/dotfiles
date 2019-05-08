@@ -22,7 +22,12 @@ alias berb="bundle exec rspec --backtrace"
 
 alias rubo="echo 'uncommitted rubo remarks:' && be pronto run --index && echo 'committed rubo remarks:' && be pronto run"
 
-alias weather="coffee ~/workspace/weather-me/run.coffee" # shortcut for the weather
+alias weather="coffee ~/workspace/weather-me/run.coffee"
+
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias hulu="chrome --app=https://www.hulu.com/"
+alias netflix="chrome --app=https://www.netflix.com/"
+alias youtube="chrome --app=https://www.youtube.com/"
 
 src() {
   if [ -f ~/.bashrc ]; then
