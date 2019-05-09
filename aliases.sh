@@ -1,7 +1,5 @@
 # my aliases
-alias ll="ls -laG" # duh
-alias wk="cd $CURRENT_PROJECT_DIRECTORY" # goto current working directory
-alias swk="pwd > ~/.current-project && src" # set current working directory
+alias ll="LSCOLOR=CxxxxxxxGx CLICOLOR=true ls -la"
 alias c="clear"
 
 alias gcm="git commit -m"

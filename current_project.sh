@@ -11,3 +11,6 @@ fi
 # prompt configuration
 # see http://www.ibm.com/developerworks/linux/library/l-tip-prompt/
 export PS1=" 🔥  \e[44;44m wk: $CURRENT_PROJECT_NAME \e[0m\e[30;42m pwd: \w \e[0m \e[32m(\$(if [ -d ./.git ]; then git symbolic-ref -q --short HEAD; else echo "="; fi;))\e[0m \n => "
+
+alias wk="cd $CURRENT_PROJECT_DIRECTORY" # goto current working directory
+alias swk="pwd > ~/.current-project && src" # set current working directory
