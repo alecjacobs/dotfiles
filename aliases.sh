@@ -38,3 +38,10 @@ src() {
     source ~/.bash_profile
   fi
 }
+
+enable_fast_key_repeat() {
+  echo "InitialKeyRepeat => 8"
+  defaults write -g InitialKeyRepeat 8
+  echo "KeyRepeat => 1"
+  defaults write -g KeyRepeat 1
+}
