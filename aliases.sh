@@ -29,12 +29,12 @@ alias youtube="chrome --app=https://www.youtube.com/"
 
 src() {
   if [ -f ~/.bashrc ]; then
-    source ~/.bashrc
     echo "sourcing .bashrc"
+    source ~/.bashrc
   fi
 
   if [ -f ~/.bash_profile ]; then
-    source ~/.bash_profile
     echo "sourcing .bash_profile"
+    source ~/.bash_profile
   fi
 }
