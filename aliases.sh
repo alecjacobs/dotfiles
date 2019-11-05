@@ -18,6 +18,8 @@ alias be="bundle exec"
 alias ber="bundle exec rspec"
 alias berb="bundle exec rspec --backtrace"
 
+alias dc="docker-compose"
+
 alias rubo="echo 'uncommitted rubo remarks:' && be pronto run --index && echo 'committed rubo remarks:' && be pronto run"
 
 alias weather="coffee ~/workspace/weather-me/run.coffee"
